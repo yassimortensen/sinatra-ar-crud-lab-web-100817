@@ -1,0 +1,17 @@
+<!-- shows list of all posts -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <%@posts.each do |post| %>
+      <div>
+        <h2>Post Name: <%=post.name%></h2>
+        <p> Post Content: <%=post.content%></p>
+      </div>
+    <%end%>
+
+  </body>
+</html>

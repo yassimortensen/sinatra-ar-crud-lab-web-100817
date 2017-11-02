@@ -1,0 +1,18 @@
+<!-- shows an individual post -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <h1>Here is the post</h1>
+    <h2><%=@post.name%></h2>
+    <p><%=@post.content%></h2>
+      <form action="/posts/<%=@post.id%>/delete" method="post">
+        <input id="hidden" type="hidden" name="_method" value="delete">
+        <input type="submit" value="delete">
+      </form>
+  </head>
+  <body>
+
+  </body>
+</html>
